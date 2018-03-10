@@ -1,0 +1,21 @@
+android {
+	productFlavors {
+		"nativescript-databinding-plugin" {
+			dimension "nativescript-databinding-plugin"
+		}
+	}
+
+    dataBinding {
+        enabled = true
+    }
+}
+repositories {
+maven {
+            url 'https://maven.google.com'
+        }
+}
+
+dependencies{
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}
